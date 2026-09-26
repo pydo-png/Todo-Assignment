@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Todo List</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="logo" aria-label="Profile placeholder">P</div>
+      <div>
+        <p class="eyebrow">PERSONAL ORGANIZER</p>
+        <h1>My Todo List</h1>
+      </div>
+    </div>
+    <div class="profile">
+      <span class="profile-name">Prince</span>
+      <div class="profile-icon">P</div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="intro">
+      <div>
+        <p class="eyebrow">TODAY'S TASKS</p>
+        <h2>Stay focused and get things done.</h2>
+        <p class="muted">Your tasks are loaded from the FastAPI backend and stored in SQLite.</p>
+      </div>
+      <div class="task-count" id="task-count">0 tasks</div>
+    </section>
+
+    <section id="todo-list" class="todo-list" aria-live="polite"></section>
+    <p id="error-message" class="error-message" hidden></p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
